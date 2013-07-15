@@ -1270,7 +1270,7 @@ var Windows = {
   },
   
   removeObserver: function(observer) {  
-     this.observers = this.observers.filter( function() { return this!=observer; });
+     this.observers = $(this.observers).filter( function() { return this!=observer; });
   },
   
   //  onDestroy onStartResize onStartMove onResize onMove onEndResize onEndMove onFocus onBeforeShow onShow onHide onMinimize onMaximize onClose
